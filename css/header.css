@@ -1,0 +1,119 @@
+.header {
+    height: 100vh;
+    position: relative;
+}
+
+.top__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+
+}
+
+.top__nav-icon {
+    font-size: 50px;
+    color: var(--white);
+}
+
+.top__nav-p {
+    font-family: var(--CR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 166px;
+    width: 100%;
+    color: var(--white);
+}
+
+.navbar {
+    background: #010305CC;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    font-family: var(--CB);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.logo__img {
+    width: 103px;
+    height: 42px;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar__list-item {
+    padding: 42px 0;
+}
+
+.navbar__list-item-link {
+    font-family: var(--MR);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--white);
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar__list-item-link:hover {
+    color: var(--or);
+}
+
+.navbar__list-item-link::after {
+    content: "";
+    position: absolute;
+    bottom: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--or);
+    width: 0%;
+    height: 3px;
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s;
+}
+
+.navbar__list-item-link:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__wrap {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .navbar__list-item {
+        padding: 20px 0;
+    }
+
+    .navbar__list-item-link::after {
+        bottom: -20px;
+    }
+}
+
+@media screen and (max-widtg: 360px) {
+    
+}
